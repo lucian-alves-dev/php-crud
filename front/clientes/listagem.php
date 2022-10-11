@@ -49,8 +49,8 @@
                         <td><?php echo $c['cpf']; ?></td>
                         <td><?php echo $c['data_nascimento']; ?></td>
                         <td width="100">
-                            <a href="/front/editar.php?id=<?php echo $c['id'] ?>">Editar</a><br>
-                            <a href="/back/excluir.php?id=<?php echo $c['id'] ?>">Excluir</a>
+                            <a href="/front/clientes/editar.php?id=<?php echo $c['id'] ?>">Editar</a><br>
+                            <a href="/back/clientes/excluir.php?id=<?php echo $c['id'] ?>">Excluir</a>
                         </td>
                     </tr>
                 <?php } ?>

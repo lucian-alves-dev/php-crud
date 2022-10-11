@@ -1,8 +1,8 @@
 <?php
 
 session_start();
-include_once 'utils.php';
-$sql = "SELECT * FROM pessoa";
+include_once $_SERVER['DOCUMENT_ROOT'] . '/back/utils.php';
+$sql = "SELECT * FROM cliente";
 $params = array_filter($_GET);
 
 $sql .= " WHERE ";

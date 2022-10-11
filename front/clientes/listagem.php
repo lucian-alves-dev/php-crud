@@ -1,7 +1,7 @@
-<?php include './../back/home.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/back/clientes/listagem.php'; ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,6 +38,7 @@
                     <th>Nome</th>
                     <th>CPF</th>
                     <th>Data de Nascimento</th>
+                    <th>Ações</th>
                 </tr>
             </thead>
             <tbody>
@@ -47,6 +48,10 @@
                         <td><?php echo $c['nome']; ?></td>
                         <td><?php echo $c['cpf']; ?></td>
                         <td><?php echo $c['data_nascimento']; ?></td>
+                        <td width="100">
+                            <a href="/front/editar.php?id=<?php echo $c['id'] ?>">Editar</a><br>
+                            <a href="/back/excluir.php?id=<?php echo $c['id'] ?>">Excluir</a>
+                        </td>
                     </tr>
                 <?php } ?>
             </tbody>

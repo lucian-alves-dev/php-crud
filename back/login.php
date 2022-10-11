@@ -1,5 +1,5 @@
 <?php
-include_once 'utils.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/back/utils.php';
 
 $login = $_REQUEST['login'];
 $senha = $_REQUEST['senha'];
@@ -12,4 +12,4 @@ if(empty($admin)) error("Login ou senha errado");
 
 session_start();
 $_SESSION['admin'] = $admin[0];
-redirect('/front/home.php');
+redirect('/front/clientes/listagem.php');

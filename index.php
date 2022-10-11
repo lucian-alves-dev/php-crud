@@ -12,15 +12,9 @@
     <fieldset class="text-center">
         <legend>Login</legend>
 
-        <form class="flex-col space-30" method="post" action="/back-end/login.php">
-            <label class="flex-col space-5">
-                <small>Login</small>
-                <input type="text" name="login" required>
-            </label>
-            <label class="flex-col space-5">
-                <small>Senha</small>
-                <input type="password" name="senha" required>
-            </label>
+        <form class="flex-col space-30" method="post" action="/back/login.php">
+            <input type="text" name="login" placeholder="Login" required>
+            <input type="password" name="senha" placeholder="Senha" required>
             <button class="button primary">Entrar</button>
         </form>
 

@@ -8,16 +8,14 @@
     <link rel="stylesheet" href="/flex/flex.css">
     <link rel="stylesheet" href="/flex/flex-style.css">
 </head>
-<body class="flex-col children-center space-30 flex-flavor-1">
+<body class="flex-col children-center space-30">
     <fieldset class="text-center">
         <legend>Login</legend>
-
         <form class="flex-col space-30" method="post" action="/back/login.php">
             <input type="text" name="login" placeholder="Login" required>
             <input type="password" name="senha" placeholder="Senha" required>
             <button class="button primary">Entrar</button>
         </form>
-
     </fieldset>
 </body>
 </html>

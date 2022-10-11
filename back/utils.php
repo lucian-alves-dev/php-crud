@@ -10,7 +10,7 @@ function db_query($sql, $params = [])
 
     $stmt = null;
     $conn = null;
-    if($results) return $results;
+    return ($results) ? $results : [];
 }
 
 function redirect($url)
@@ -25,11 +25,13 @@ function error($msg = "")
     die;
 }
 
-function dump($arg)
+function dump(...$args)
 {
     ob_clean();
     echo "<pre>";
-    var_dump($arg);
+    foreach($args as $arg) {
+        var_dump($arg);
+    }
     echo "</pre>";
     exit;
 }
